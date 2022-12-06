@@ -14,7 +14,8 @@ print('*'* 50)
 
 fuelPer100Km = 6
 trip = 150
-tripCost = fuelPer100Km*1.5
+price = 6
+tripCost = trip * 6 / 100 * price
 print(f'Trip cost = {tripCost}$')
 print('*' * 50)
 
