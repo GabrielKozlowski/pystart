@@ -1,5 +1,5 @@
 # My ignored files
-.idea/
+.idea/*
 venv/
 
 # Byte-compiled / optimized / DLL files
