@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-# pystart
-=======
-# pystart_cours
->>>>>>> cc967dc (Initial commit)
+This repository is for my course of python "Pystart"
