@@ -40,15 +40,15 @@
 # print(f'Your BMI is : {bmi}')
 # print('*'* 50)
 #
-# net_input = float(input('Input net value: '))
+# net_input = float(input('Enter net value: '))
 # gross = net_input * 1.23
 #
 # print(f'Gross of value {net_input} is {gross}')
 # print('*'* 50)
 
-# height_input = float(input('Input h value: '))
-# site_A_input = float(input('Input a value: '))
-# site_B_input = float(input('Input b value: '))
+# height_input = float(input('Enter h value: '))
+# site_A_input = float(input('Enter a value: '))
+# site_B_input = float(input('Enter b value: '))
 #
 # p = ((site_A_input + site_B_input) * height_input) / 2
 # print(f'Trapezoidal area = {p}')
@@ -56,7 +56,7 @@
 
 # #-------------------------------------------------------
 #
-# number = int(input('Please input a number 0-9: '))
+# number = int(input('Please enter a number 0-9: '))
 #
 # if number % 2 == 0:
 #     print(f'Number {number} is even')
@@ -65,8 +65,8 @@
 # print('*' * 50)
 
 #
-# number1 = int(input('Please input a first number 0-9: '))
-# number2 = int(input('Please input a second number 0-9: '))
+# number1 = int(input('Please enter a first number 0-9: '))
+# number2 = int(input('Please enter a second number 0-9: '))
 #
 # if number1 > number2:
 #     print(f'Number1 "{number1}" is bigger')
@@ -77,8 +77,9 @@
 # print('*' * 50)
 
 # ''' # Funckja isnumeric() sprawdza czy string jest numerem
-# number1 = input('Please input a first number 0-9: ')
-# number2 = input('Please input a second number 0-9: ')
+#
+# number1 = input('Please enter a first number 0-9: ')
+# number2 = input('Please enter a second number 0-9: ')
 #
 # if number1.isnumeric() and number2.isnumeric():
 #
@@ -93,7 +94,7 @@
 # print('*' * 50)
 # '''
 
-# temp = float(input('Please input value of temperature: '))
+# temp = float(input('Please enter value of temperature: '))
 #
 # if temp <= 10:
 #     print('Stay at home!')
