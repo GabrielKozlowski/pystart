@@ -78,12 +78,22 @@
 
 # #**********************************************************************************
 
+# # >>>>>>>>>>>>>>> Fifth task to do. <<<<<<<<<<<<<<<<
+# # Convert seconds to hours and format to 00:00
 
+# time_in_seconds = 23400, 34200, 81000
+#
+# for time in time_in_seconds:
+#     hours = time / 60 / 60
+#     minutes = hours % 1 * 60
+#     print(f'Its {int(hours)}:{int(minutes)}')
+#
+# def secondsToTime(seconds):
+#     hours = seconds / 60 / 60
+#     minutes = hours % 1 * 60
+#     return f'Its {int(hours)}:{int(minutes)}'
+#
+#
+# print(secondsToTime(34324))
 
-
-
-
-
-
-
-
+# #**********************************************************************************
