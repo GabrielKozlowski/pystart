@@ -97,3 +97,46 @@
 # print(secondsToTime(34324))
 
 # #**********************************************************************************
+
+# # >>>>>>>>>>>>>>> Sixth task to do. <<<<<<<<<<<<<<<<
+# # Do a math task.
+#
+# from math import pi, sqrt
+#
+# # # Enter value of point A and B
+# value_Ax = int(input('Enter value of x in A point: '))
+# value_Ay = int(input('Enter value of y in A point: '))
+# value_Bx = int(input('Enter value of x in B point: '))
+# value_By = int(input('Enter value of y in B point: '))
+#
+# # # Value of point C and D
+# value_Cx = value_Ax
+# value_Cy = value_By
+# value_Dx = value_Bx
+# value_Dy = value_Ay
+# # # Length of segment AD and BD
+# length_AD = sqrt((value_Dx - value_Ax) ** 2 + (value_Dy - value_Ay) ** 2)
+# length_BD = sqrt((value_Dx - value_Bx) ** 2 + (value_Dy - value_By) ** 2)
+#
+# # # Calculation value x and y of center segment
+# center_x = (value_Ax + value_Bx) / 2
+# center_y = (value_Ay + value_By) / 2
+# center_xy = center_x,center_y
+# print(f'Center of segment: ({center_x}, {center_y})')
+# # # Calculating radius value of segment
+# radius = sqrt((center_x - value_Ax) ** 2 + (center_y - value_Ay) ** 2)
+# print('Radius of segment: ',radius)
+# # # Calculating field of a circle using the radius
+# field = pi * radius ** 2
+# print('Field: ',field)
+# # # Calculating field of rectangle
+# rectangle_field = length_AD * length_BD
+# # # Calculating circuit of rectangle
+# rectangle_circuit = length_AD * 2 + length_BD * 2
+#
+# print(f'Rectangle field = {rectangle_field}')
+# print(f'Rectangle circuit = {rectangle_circuit}')
+
+# #**********************************************************************************
+
+
