@@ -190,3 +190,18 @@
 #
 # #******************************************************
 
+# # >>>>>>>>>>>>>>> Ninth task to do. <<<<<<<<<<<<<<<<
+# # Calculate the area and field of isosceles triangle .
+# # F= (a ** 2 * sqrt(3)) / 4
+# from math import sqrt
+#
+#
+# isosceles_side = int(input('Enter value of triangle side: '))
+# field = (isosceles_side ** 2 * sqrt(3)) / 4
+# area = isosceles_side * 3
+#
+# print(f"The area of isosceles triangle = {area} \nThe field of isosceles triangle = {field}")
+# print("The area of isosceles triangle = {0:5.2f} \nThe field of isosceles triangle = {1:5.2f}".format(area, field))
+
+# #**********************************************************************************************************
+
