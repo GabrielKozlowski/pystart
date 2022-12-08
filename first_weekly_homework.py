@@ -205,3 +205,68 @@
 
 # #**********************************************************************************************************
 
+# # >>>>>>>>>>>>>>> Tenth task to do. <<<<<<<<<<<<<<<<
+# # Check inputed number, and print what day of week it is.
+
+# days_of_week = '''
+# 1 - Monday
+# 2 - Tuesday
+# 3 - Wednesday
+# 4 - Thursday
+# 5 - Friday
+# 6 - Saturday
+# 7 - Sunday
+# '''
+# print(days_of_week)
+# day_of_week = input("Enter a number of weekday ")
+#
+# if day_of_week.isnumeric():
+#     day_of_week = int(day_of_week)
+#     if day_of_week == 1:
+#         print("Today is Monday")
+#     elif day_of_week == 2:
+#         print("Today is Tuesday")
+#     elif day_of_week == 3:
+#         print("Today is Wednesday")
+#     elif day_of_week == 4:
+#         print("Today is Thursday")
+#     elif day_of_week == 5:
+#         print("Today is Friday")
+#     elif day_of_week == 6:
+#         print("Today is Saturday")
+#     elif day_of_week == 7:
+#         print("Today is Sunday")
+#     else:
+#         print("Wrong number!!")
+# else:
+#     print("Only numbers !!")
+#
+# #***********************************************************************
+
+
+# # =====>>>>>>>>>>>>>>> Tenth task improved. <<<<<<<<<<<<<<<<=====
+# # Dictionary with days of week as a numbers, print automatically correct day.
+
+#
+# days_of_week = {
+#     1: "Monday",
+#     2: "Tuesday",
+#     3: "Wednesday",
+#     4: "Thursday",
+#     5: "Friday",
+#     6: "Saturday",
+#     7: "Sunday"
+# }
+#
+# number_input = input("Enter number ")
+#
+# if number_input.isnumeric():
+#     number_input = int(number_input)
+#     if number_input > 7:
+#         print("Wrong number !!")
+#     else:
+#         print(f"Today is {days_of_week[number_input]}")
+# else:
+#     print("Only numbers !!")
+# #********************************************************
+
