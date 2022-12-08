@@ -139,4 +139,54 @@
 
 # #**********************************************************************************
 
+# # >>>>>>>>>>>>>>> Seventh task to do. <<<<<<<<<<<<<<<<
+# # Check inputed age, is it an adult and it the born year is a leap year.
+#
+# age_input = input("Please enter you'r age: ")
+#
+# if age_input.isnumeric():
+#     age_input = int(age_input)
+#     if age_input > 200:
+#         print("You are definitely not that old !!")
+#     else:
+#         if age_input >= 18:
+#             print("You are an adult")
+#         else:
+#             print("You are not an adult")
+#
+#         curent_year = 2022
+#         born_year = curent_year - age_input
+#         if born_year % 4 == 0 and born_year != 1900 and born_year != 2100:
+#             print(f"Your born year {born_year} is a leap year")
+#         else:
+#             print(f"Your born year {born_year} is not a leap year")
+# else:
+#     print("Enter only the numbers!!!")
+
+# #********************************************************************************
+
+# # >>>>>>>>>>>>>>> Eighth task to do. <<<<<<<<<<<<<<<<
+# # Check if input number is palindrome.
+
+#
+# numbers_input = input("Enter a number, we'll check if it's a palindromic number: ")
+# list_numbers = list(numbers_input)
+# reverse_list = list_numbers.copy()
+# reverse_list.reverse()
+#
+# if numbers_input.isnumeric():
+#
+#     if len(list_numbers) % 2 == 0:
+#
+#         if list_numbers == reverse_list:
+#             print(f"The number {numbers_input} it's palindromic")
+#         else:
+#             print(f"The number {numbers_input} it's not palindromic")
+#
+#     else:
+#         print("The numbers must be even")
+# else:
+#     print("You must enter numbers !!")
+#
+# #******************************************************
 
