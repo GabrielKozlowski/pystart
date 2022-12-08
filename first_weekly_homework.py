@@ -270,3 +270,23 @@
 #     print("Only numbers !!")
 # #********************************************************
 
+# # >>>>>>>>>>>>>>> Eleventh task to do. <<<<<<<<<<<<<<<<
+# # Pick up three numbers and check which one is bigger and which one is lower.
+
+# number_one = input("Enter fist number: ")
+# number_two = input("Enter second number: ")
+# number_three = input("Enter third number: ")
+#
+# if number_one.isnumeric() and number_two.isnumeric() and number_three.isnumeric():
+#     numbers_to_check = [int(number_one), int(number_two), int(number_three)]
+#
+#     sorted_list = numbers_to_check.copy()
+#     sorted_list.sort()
+#     reversed_list = sorted_list.copy()
+#     reversed_list.reverse()
+#     print('*'*50)
+#     print(f"The biggest number is {reversed_list[0]} \nThe lover number is {sorted_list[0]}")
+# else:
+#     print("Only numbers !!")
+#
+# #****************************************************************************************
