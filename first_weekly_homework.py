@@ -247,7 +247,7 @@
 # # =====>>>>>>>>>>>>>>> Tenth task improved. <<<<<<<<<<<<<<<<=====
 # # Dictionary with days of week as a numbers, print automatically correct day.
 
-#
+# #
 # days_of_week = {
 #     1: "Monday",
 #     2: "Tuesday",
@@ -257,7 +257,7 @@
 #     6: "Saturday",
 #     7: "Sunday"
 # }
-#
+
 # number_input = input("Enter number ")
 #
 # if number_input.isnumeric():
@@ -272,7 +272,7 @@
 
 # # >>>>>>>>>>>>>>> Eleventh task to do. <<<<<<<<<<<<<<<<
 # # Pick up three numbers and check which one is bigger and which one is lower.
-
+#
 # number_one = input("Enter fist number: ")
 # number_two = input("Enter second number: ")
 # number_three = input("Enter third number: ")
@@ -288,5 +288,5 @@
 #     print(f"The biggest number is {reversed_list[0]} \nThe lover number is {sorted_list[0]}")
 # else:
 #     print("Only numbers !!")
-#
+
 # #****************************************************************************************
