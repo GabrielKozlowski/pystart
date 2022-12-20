@@ -2,14 +2,14 @@
 # # Convert degrees celsius to fahrenheit
 
 # celsius = float(input('Please enter celsius degrees: '))
-# fahrenheit = 2 * celsius + 32
-# print(f'{celsius}°C = {fahrenheit}°F')
+# fahrenheit = 32 + 9/5 * celsius
+# print(f'{celsius}°C = {fahrenheit:.2f}°F')
 
 # #************************************************
 
 # # >>>>>>>>>>>>>>> Second task to do. <<<<<<<<<<<<<<<<
 # # Calculate the area of ​​a triangle by picking three vertices
-#
+
 # vertice_A_X = float(input('Please enter x value in vertice A: '))
 # vertice_A_Y = float(input('Please enter y value in vertice A: '))
 #
@@ -38,8 +38,6 @@
 #         print(f'Number {number} is divide by 5')
 #     elif number % 11 == 0:
 #         print(f'Number {number} is divide by 11')
-#     # elif number % 5 != 0 and number % 11 != 0:
-#     #     print(f'Number {number} is not divisible by 5 or 11')
 #     else:
 #         print(f'Number {number} is not divisible by 5 or 11')
 # else:
@@ -100,7 +98,7 @@
 
 # # >>>>>>>>>>>>>>> Sixth task to do. <<<<<<<<<<<<<<<<
 # # Do a math task.
-#
+
 # from math import pi, sqrt
 #
 # # # Enter value of point A and B
@@ -154,9 +152,9 @@
 #         else:
 #             print("You are not an adult")
 #
-#         curent_year = 2022
-#         born_year = curent_year - age_input
-#         if born_year % 4 == 0 and born_year != 1900 and born_year != 2100:
+#         current_year = 2022
+#         born_year = current_year - age_input
+#         if (born_year % 4 == 0 and born_year % 100 != 0) or born_year % 400 == 0:
 #             print(f"Your born year {born_year} is a leap year")
 #         else:
 #             print(f"Your born year {born_year} is not a leap year")
