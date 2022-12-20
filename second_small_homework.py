@@ -50,6 +50,26 @@
 # else:
 #     print("You do not receive a certificate with a red stripe")
 # #**********************************************************************
-
-
-
+# names = "Alex", "Ewa", "Alicja", "Gabriel"
+# for index, name in enumerate(names):
+#     print(index,name)
+#
+# print('*'* 50)
+#
+# numbers = (56, 7, 4, 2, 43, 6, 7, 8, 98, 344, 24, 545, 63, 57)
+#
+# for number in numbers:
+#     if number % 4 == 0 or number % 5 == 0:
+#         print(number)
+# print('-'* 50)
+# for name in names:
+#     if len(name) > 5:
+#         print(name)
+# print('*'* 50)
+#
+# for counter in reversed(range(1, 5)):
+#     for digit in range(1, counter + 1):
+#         print(digit, end=' ')
+#     print()
+#
+# #**********************************************************************
