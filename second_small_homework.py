@@ -73,3 +73,26 @@
 #     print()
 #
 # #**********************************************************************
+
+# name = input("Enter you'r name: ").lower()
+#
+# if (name.endswith('a') or name.startswith('nel')) and not name.startswith('kuba'):
+#     print(f"Witam panią. {name.capitalize()}")
+# else:
+#     print(f"Witam pana. {name.capitalize()}")
+#
+# password = input("Enter you'r password: ").replace('a', '@').replace('s', '$').replace('o', '0')
+# print(password)
+#
+# text = 'Pies to najlepszy przyjaciel człowieka, lecz nie każdy pies o tym wie'
+# print(text.lower().count('pies'))
+#
+# shopping = "12 kilogramów jabłek, 10 kilogramów gruszek, 20 kilogramów śliwek".split(' ')
+# weight = 0
+# for a in shopping:
+#     if a.isnumeric():
+#         a = int(a)
+#         weight += a
+#
+# print(weight)
+
