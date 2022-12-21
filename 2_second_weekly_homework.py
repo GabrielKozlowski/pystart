@@ -43,3 +43,22 @@
 #     print(f"Letter: '{letter}' = ASCII number: {ord_letter}")
 
 # #************************************************
+# # >>>>>>>>>>>>>>> Fifth task to do. <<<<<<<<<<<<<<<<
+# # Check is it prime number
+
+# number = int(input("Enter a integer number: "))
+# flag = False
+# if number > 1:
+#     for i in range(2, number):
+#         if (number % i) == 0:
+#             flag = True
+#             break
+#
+# if flag:
+#     print(f"Number: {number} is not a prime")
+# else:
+#     print(f"Number: {number} is prime number !!")
+# #************************************************
+
+
+
