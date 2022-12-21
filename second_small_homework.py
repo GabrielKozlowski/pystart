@@ -95,34 +95,24 @@
 #         weight += a
 #
 # print(weight)
-
-
-
-xx = '''
-    1
-   121
-  12321
- 1234321
-123454321
-'''
-
-# for n in range(1, 6):
-#     if n == 1:
-#         print(' ' * (5-n), n)
+# # Create a christmas tree :)
+# xx = '''
+#     1
+#    121
+#   12321
+#  1234321
+# 123454321
+# '''
+# levels = 10
 #
-#     elif n >3:
-#         print(' ' * (5 - n), str(n-4) + str(n-3) + str(n-2) + str(n-1) + str(n) + str(n-1) + str(n-2) + str(n-3) + str(n-4) )
-#
-levels = 10
-
-if levels <= 10:
-    for line in range(1, levels):
-        if line == 1:
-            numbers = '{}'.format(line)
-            print(' ' * (levels - line), numbers)
-        else:
-            reversed_numbers = numbers[::-1]
-            numbers += '{}'.format(line)
-            print(' ' * (levels - line), numbers + reversed_numbers)
-else:
-    print("To many levels !!!")
+# if levels <= 10:
+#     for line in range(1, levels):
+#         if line == 1:
+#             numbers = '{}'.format(line)
+#             print(' ' * (levels - line), numbers)
+#         else:
+#             reversed_numbers = numbers[::-1]
+#             numbers += '{}'.format(line)
+#             print(' ' * (levels - line), numbers + reversed_numbers)
+# else:
+#     print("To many levels !!!")
