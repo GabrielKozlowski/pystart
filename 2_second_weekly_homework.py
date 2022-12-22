@@ -59,6 +59,43 @@
 # else:
 #     print(f"Number: {number} is prime number !!")
 # #************************************************
+# # >>>>>>>>>>>>>>> Fifth task to do. <<<<<<<<<<<<<<<<
+# # Create tuple and add numbers multiplied by 6, print some numbers.
+
+# numbers = ()
+# for number in range(12, 1024, 6):
+#     numb = (number,)
+#     numbers += numb
+#
+# sum_of_numbers = len(numbers)
+# print(numbers)
+# print(f"Sum of numbers: {sum_of_numbers}")
+# print('First three numbers: ', numbers[:3])
+# print("Penultimate number: ", numbers[-2])
+# print(f"Every sixth number in the range from the third to the last number: {numbers[3:1024:6]}")
+# print(f"Every third number from the end: {numbers[::-3]}")
+# print("Sum of last ten numbers:", (sum(numbers[-10:]) / len(numbers[-10:])))
+# #************************************************
+# # >>>>>>>>>>>>>>> Sixth task to do. <<<<<<<<<<<<<<<<
+# #  Use position in tuple and print them
+
+# person = ('Gabriel', 'Kozlowski', '33')
+#
+# print(f"Imię: {person[0]}\nNazwisko: {person[1]}\nWiek: {person[2]}")
+
+# #************************************************
+# # >>>>>>>>>>>>>>> Seventh task to do. <<<<<<<<<<<<<<<<
+# #  Add numbers in tuple and print result
+
+# first_number_tuple = (1, 2, 3)
+# second_number_tuple = (4, 5, 6)
+# third_number_tuple = (7, 8, 9)
+#
+# print(f"{first_number_tuple[0]} + {first_number_tuple[1]} + {first_number_tuple[2]} = {sum(first_number_tuple)}")
+# print(f"{second_number_tuple[0]} + {second_number_tuple[1]} + {second_number_tuple[2]} = {sum(second_number_tuple)}")
+# print(f"{third_number_tuple[0]} + {third_number_tuple[1]} + {third_number_tuple[2]} = {sum(third_number_tuple)}")
+
+# #************************************************
 
 
 
