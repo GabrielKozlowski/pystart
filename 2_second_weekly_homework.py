@@ -96,6 +96,61 @@
 # print(f"{third_number_tuple[0]} + {third_number_tuple[1]} + {third_number_tuple[2]} = {sum(third_number_tuple)}")
 
 # #************************************************
+# # >>>>>>>>>>>>>>> Eighth task to do. <<<<<<<<<<<<<<<<
+# #  Do some operations on strings
+# # 1
+# text = input("Enter the text spaces and punctuation marks: ")
+#
+# print(text[::-1])
+# print('\n')
+
+# # 2
+# punctuation_marks = ('!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-', '+', '=', ',', '.', '?', '/', '|', ';', ' ', ':', '>', '<')
+# fixed_text = ''
+# for t in text:
+#     if t in punctuation_marks:
+#         t = t.replace(t, '')
+#         fixed_text += t
+#     else:
+#         fixed_text += t
+#
+# print(fixed_text)
+
+# # 3 & 4
+
+# message = input("Enter some text: ")
+#
+# split_message = message.split(' ')
+# print(f'Split message: {split_message}')
+#
+# list_words = []
+# without_vowels = ''
+# vowels = ('a', 'e', 'i', 'o', 'u', 'ó', 'y', 'ą', 'ę')
+#
+#
+# for x in range(0, len(split_message)):
+#
+#     if x % 2 == 1:
+#         modified_x = split_message[x].upper()
+#
+#         if modified_x[0] == modified_x[-1] and len(modified_x) > 2:
+#             list_words.append(modified_x.lower())
+#
+#     else:
+#         modified_x = split_message[x].lower()
+#         if modified_x[0] == modified_x[-1] and len(modified_x) > 2:
+#             list_words.append(modified_x.lower())
+#
+#     for word in split_message[x].lower():
+#         if word in vowels:
+#             word = ' '
+#             without_vowels += word
+#         else:
+#             without_vowels += word
+#
+# print(f'List of words with the same letters: {list_words}')
+# print(f"Without vowels: {without_vowels} ")
 
 
+# #************************************************
 
