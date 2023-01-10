@@ -1,7 +1,7 @@
 # # >>>>>>>>>>>>>>> First and second task to do. <<<<<<<<<<<<<<<<
 # # Print even numbers from input
 # # Print sum, amount, ratio and average of number from input
-
+#
 # numbers = int(input("Enter integer number:  "))
 # sum_of_number = 0
 # amount_of_number = 0
@@ -61,7 +61,7 @@
 # #************************************************
 # # >>>>>>>>>>>>>>> Fifth task to do. <<<<<<<<<<<<<<<<
 # # Create tuple and add numbers multiplied by 6, print some numbers.
-
+#
 # numbers = ()
 # for number in range(12, 1024, 6):
 #     numb = (number,)
@@ -78,7 +78,7 @@
 # #************************************************
 # # >>>>>>>>>>>>>>> Sixth task to do. <<<<<<<<<<<<<<<<
 # #  Use position in tuple and print them
-
+#
 # person = ('Gabriel', 'Kozlowski', '33')
 #
 # print(f"Imię: {person[0]}\nNazwisko: {person[1]}\nWiek: {person[2]}")
@@ -86,7 +86,7 @@
 # #************************************************
 # # >>>>>>>>>>>>>>> Seventh task to do. <<<<<<<<<<<<<<<<
 # #  Add numbers in tuple and print result
-
+#
 # first_number_tuple = (1, 2, 3)
 # second_number_tuple = (4, 5, 6)
 # third_number_tuple = (7, 8, 9)
@@ -94,6 +94,12 @@
 # print(f"{first_number_tuple[0]} + {first_number_tuple[1]} + {first_number_tuple[2]} = {sum(first_number_tuple)}")
 # print(f"{second_number_tuple[0]} + {second_number_tuple[1]} + {second_number_tuple[2]} = {sum(second_number_tuple)}")
 # print(f"{third_number_tuple[0]} + {third_number_tuple[1]} + {third_number_tuple[2]} = {sum(third_number_tuple)}")
+# print('\n')
+#
+# calculations = (1, 2, 3), (4, 5, 6), (7, 8, 9)
+#
+# for calculation in calculations:
+#     print(f"{calculation[0]} + {calculation[1]} + {calculation[2]} = {sum(calculation)}")
 
 # #************************************************
 # # >>>>>>>>>>>>>>> Eighth task to do. <<<<<<<<<<<<<<<<
@@ -103,7 +109,7 @@
 #
 # print(text[::-1])
 # print('\n')
-
+#
 # # 2
 # punctuation_marks = ('!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-', '+', '=', ',', '.', '?', '/', '|', ';', ' ', ':', '>', '<')
 # fixed_text = ''
@@ -115,42 +121,49 @@
 #         fixed_text += t
 #
 # print(fixed_text)
-
+#
 # # 3 & 4
-
+#
 # message = input("Enter some text: ")
 #
 # split_message = message.split(' ')
-# print(f'Split message: {split_message}')
+# print(f'Split message: {split_message}\n')
 #
+# snake_message = ''
 # list_words = []
 # without_vowels = ''
-# vowels = ('a', 'e', 'i', 'o', 'u', 'ó', 'y', 'ą', 'ę')
+# vowels = 'aeiouóyąę'
 #
 #
 # for x in range(0, len(split_message)):
 #
+#
 #     if x % 2 == 1:
 #         modified_x = split_message[x].upper()
+#         snake_message += (modified_x + ' ')
 #
 #         if modified_x[0] == modified_x[-1] and len(modified_x) > 2:
 #             list_words.append(modified_x.lower())
 #
 #     else:
 #         modified_x = split_message[x].lower()
+#         snake_message += (modified_x + ' ')
+#
 #         if modified_x[0] == modified_x[-1] and len(modified_x) > 2:
 #             list_words.append(modified_x.lower())
 #
 #     for word in split_message[x].lower():
+#
 #         if word in vowels:
 #             word = ' '
 #             without_vowels += word
 #         else:
 #             without_vowels += word
 #
-# print(f'List of words with the same letters: {list_words}')
+# print(f"Snake message : {snake_message}")
+# print(f'List of words with the same first and last letter: {list_words}')
 # print(f"Without vowels: {without_vowels} ")
-
+#
 
 # #************************************************
 
