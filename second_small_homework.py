@@ -116,3 +116,23 @@
 #             print(' ' * (levels - line), numbers + reversed_numbers)
 # else:
 #     print("To many levels !!!")
+# # ***************************************************************
+
+# number = int(input("Entry a number to check: "))
+# isPrime = True
+# if number > 1:
+#     for n in range(2, number):
+#         if number % n == 0:
+#             isPrime = False
+#             break
+#
+# if isPrime:
+#     print(f"Number {number} is a prime number")
+# else:
+#     print(f"Number {number} is not a prime number")
+
+# #***************************************************
+
+
+
+
