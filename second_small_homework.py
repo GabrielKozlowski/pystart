@@ -134,5 +134,30 @@
 # #***************************************************
 
 
+bands = ['system of a down', 'linking park', 'Coldplay']
+print(bands)
+
+bands[0] = '50cent'
+print(bands)
+
+del bands[0]
+
+bands.append('50cent')
+bands.append('System of a down')
+print('Coldplay' in bands)
+print('Sanah' in bands)
+
+bands.remove('System of a down')
+print(bands)
+
+text = list('dowolnynapis')
+print(text)
+text = ''.join(text)
+print(text)
+
+
+
+
+
 
 
