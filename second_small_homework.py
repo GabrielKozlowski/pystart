@@ -134,30 +134,98 @@
 # #***************************************************
 
 
-bands = ['system of a down', 'linking park', 'Coldplay']
-print(bands)
+# bands = ['system of a down', 'linking park', 'Coldplay']
+# print(bands)
+#
+# bands[0] = '50cent'
+# print(bands)
+#
+# del bands[0]
+#
+# bands.append('50cent')
+# bands.append('System of a down')
+# print('Coldplay' in bands)
+# print('Sanah' in bands)
+#
+# bands.remove('System of a down')
+# print(bands)
+#
+# text = list('dowolnynapis')
+# print(text)
+# text = ''.join(text)
+# print(text)
 
-bands[0] = '50cent'
-print(bands)
+#******************************************************
+#
+# names = ["asia", "baSIa", "WoJtEk", "krYSIA"]
+# proper_names = []
+#
+# for name in names:
+#     proper_names.append(name.title())
+#
+# print(names)
+# print(proper_names)
+#
+# cities = ['Warsaw', 'Cracow', 'Gdansk']
+# new_cities = ['Berlin', 'London']
+#
+# all_cities_plus = cities + new_cities
+# cities.extend(new_cities)
+#
+# countries = ['Polska', 'Niemcy', 'Francja']
+# capitals = ['Warszawa', 'Berlin', 'Paryż']
+#
+# print("Państwo - Stolica")
+#
+# for country, capital in zip(countries, capitals):
+#     print(country, '-', capital)
 
-del bands[0]
+#********************************************************************
+#
+# sentence = input('Enter your sentence: ')
+#
+# sentence_words = len(sentence.split(' '))
+# sentence_len = len(sentence),
+# print('Len of words', sentence_words)
+# print('ELen of letters', sentence_len)
+#
+#
+# ####
+# numbers_list = []
+# number_of_numbers = 5
+#
+# for r in range(number_of_numbers):
+#     user_number = int(input(f'Enter {r+1} number: '))
+#     numbers_list.append(user_number)
+#
+# print(numbers_list)
+# print(f"Najmniejsza liczba to {min(numbers_list)}")
+# print(f"Największa liczba to {max(numbers_list)}")
+# print(f"Średnia liczb to {(sum(numbers_list) / len(numbers_list))}")
 
-bands.append('50cent')
-bands.append('System of a down')
-print('Coldplay' in bands)
-print('Sanah' in bands)
+# people_list = []
+# person_name_list = []
+#
+# for _ in range(3):
+#     user_answer = input('Enter Name and surname: ')
+#     people_list.append(user_answer)
 
-bands.remove('System of a down')
-print(bands)
+# ## first way
+# for person in people_list:
+#     person_data = person.split(' ')
+#     if person_data[0] not in person_name_list:
+#         person_name_list.append(person_data[0])
 
-text = list('dowolnynapis')
-print(text)
-text = ''.join(text)
-print(text)
+# ## another way
 
+# for person in people_list:
+#     first_name, last_name = person.split(' ')
+#     if first_name not in person_name_list:
+#         person_name_list.append(first_name)
+#
+#
+# sorted_person_name_list = sorted(person_name_list, reverse=True)
+# print(sorted_person_name_list)
+# print(person_name_list)
 
-
-
-
-
-
+#**********************************************
