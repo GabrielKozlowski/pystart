@@ -16,6 +16,8 @@
 #     print(country)
 #     print(capital)
 # #**********************************************************
+s = 'ula'
+s = 'ala'
 
 # message = '''
 # Welcome
@@ -51,11 +53,11 @@
 
 
 # sentence = input('Enter a sentence ')
-sentence = 'raz ja raz ty a raz ja i ona'
-sentence_dict = {word: sentence.split(' ').count(word) for word in sentence.split(' ')}
-
-print(sentence_dict)
-
+# sentence = 'raz ja raz ty a raz ja i ona'
+# sentence_dict = {word: sentence.split(' ').count(word) for word in sentence.split(' ')}
+#
+# print(sentence_dict)
+# #------------------------------------
 # sentence = 'Python to wpaniały język Python to język szybki i wydajny'
 # words = sentence.split(' ')
 # word_counter = {}
@@ -63,8 +65,65 @@ print(sentence_dict)
 #     word_counter[word] = word_counter.get(word, 0) + 1
 #
 # print(word_counter)
+# #------------------------------------
+# sentence = 'Python to wpaniały język Python to język szybki i wydajny'
+#
+# sentence_dict = {word: sentence.split(' ').count(word) for word in sentence.split(' ')}
+# print(sentence_dict)
 
-sentence = 'Python to wpaniały język Python to język szybki i wydajny'
+workers = [
+    {
+        'id': 1,
+        'job_title': 'junior developer',
+        'name': 'John',
+        'programming_language': ['python']
+    },
+    {
+        'id': 2,
+        'job_title': 'senior developer',
+        'name': 'Mark',
+        'programming_language': ['python', 'php']
+    },
+    {
+        'id': 3,
+        'job_title': 'stuff developer',
+        'name': 'Alex',
+        'programming_language': ['php', 'javascript', 'python']
+    },
+    {
+        'id': 4,
+        'job_title': 'junior developer',
+        'name': 'Bart',
+        'programming_language': ['javascript', 'php']
+    },
+    {
+        'id': 5,
+        'job_title': 'senior developer',
+        'name': 'Carl',
+        'programming_language': ['python', 'javascript']
+    },
+    {
+        'id': 6,
+        'job_title': 'junior developer',
+        'name': 'Martha',
+        'programming_language': ['php', 'javascript']
+    }
+]
+language_dict = {}
 
-sentence_dict = {word: sentence.split(' ').count(word) for word in sentence.split(' ')}
-print(sentence_dict)
+for worker in workers:
+
+    for code_language in worker['programming_language']:
+
+        if code_language not in language_dict:
+            language_dict[code_language] = {
+                'quantity': 0,
+                'names': []
+            }
+
+        language_dict[code_language]['quantity'] += 1
+        language_dict[code_language]['names'].append(worker['name'])
+
+print(language_dict)
+
+
