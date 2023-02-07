@@ -167,3 +167,56 @@
 #             break
 
 # #*****************************************************************************************
+
+# # >>>>>>>>>>>>>>> Seventh task to do. <<<<<<<<<<<<<<<<
+# # "Word jumble"
+# from random import choice, shuffle
+#
+#
+# words = ['money', 'python', 'bike', 'friends', 'variable', 'coding', 'yerba', 'poland', 'keyboard']
+#
+#
+# random_word = choice(words)
+# list_word = list(random_word)
+# shuffle(list_word)
+#
+#
+# play = input('Wanna play "Word Jumble" y/n ?? ').lower()
+# counter = 0
+# if play == 'y':
+#     print(list_word)
+#
+#     while counter < 3:
+#         answer = input('Enter answer: ')
+#         counter += 1
+#         if answer == random_word:
+#             print(f"Congrats you guessed !! You needed {counter} trial/s")
+#             break
+#         else:
+#             print('Try again')
+#             continue
+#
+# else:
+#     quit()
+#
+# #******************************************************************************************
+
+# # >>>>>>>>>>>>>>> Eighth task to do. <<<<<<<<<<<<<<<<
+# # Write simply diners generator
+# from random import choice
+#
+# dishes = {
+#     'soup': ['tomato', 'cucumber', 'chicken'],
+#     'lunch': ['meet balls', 'doves', 'schnitzel'],
+#     'dessert': ['icecream', 'cake', 'pudding'],
+# }
+#
+# soup_choice = choice(dishes['soup'])
+# lunch_choice = choice(dishes['lunch'])
+# dessert_choice = choice(dishes['dessert'])
+#
+# print(f"Soup: {soup_choice}\nLunch: {lunch_choice}\nDessert: {dessert_choice}")
+
+# #****************************************************************************************
+
+
