@@ -153,7 +153,7 @@
 #             if new_country_info not in dictionary:
 #                 dictionary.append(new_country_info)
 #             else:
-#                 print('The country is already in dictionary ')
+#                 print('The country is already in th e dictionary ')
 #
 #         elif choices_number == 3:
 #             country_to_delete = input('Enter country name to delete: ')
@@ -290,10 +290,3 @@
 # else:
 #     print('You be better next time')
 # #**********************************************************************
-
-
-
-
-
-
-
