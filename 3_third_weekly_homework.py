@@ -102,7 +102,7 @@
 #     if len(name) > len(animal_name):
 #         animal_name = name
 #
-# print(animal_name)
+# print(animal_name, home_animals[animal_name])
 
 # #**************************************************************
 
@@ -114,7 +114,7 @@
 #
 # info = '''
 #
-# Welcome to dictionary of your favorite countries info.
+# Welcome to dictionary of information about your favorite countries.
 # Press number to function.
 #
 # 1 - Show dictionary info
@@ -181,7 +181,7 @@
 # shuffle(list_word)
 #
 #
-# play = input('Wanna play "Word Jumble" y/n ?? ').lower()
+# play = input('Want to play "Word Jumble" y/n ?? ').lower()
 # counter = 0
 # if play == 'y':
 #     print(list_word)
@@ -190,7 +190,7 @@
 #         answer = input('Enter answer: ')
 #         counter += 1
 #         if answer == random_word:
-#             print(f"Congrats you guessed !! You needed {counter} trial/s")
+#             print(f"Congrats. You guessed !! You needed {counter} trial/s ")
 #             break
 #         else:
 #             print('Try again')
@@ -218,5 +218,82 @@
 # print(f"Soup: {soup_choice}\nLunch: {lunch_choice}\nDessert: {dessert_choice}")
 
 # #****************************************************************************************
+
+# # >>>>>>>>>>>>>>> Ninth task to do. <<<<<<<<<<<<<<<<
+# # Chose a random card from 52 card deck
+#
+# from random import choice
+# cards = []
+# nuber_of_cards = ["2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K", "A"]
+# type_of_cards = [chr(9824), chr(9827), chr(9829), chr(9830)]
+#
+# for type_of_card in type_of_cards:
+#     for number_of_card in nuber_of_cards:
+#         cards.append(f"{type_of_card}{number_of_card}")
+#
+# print(cards)
+#
+# random_card = f"{choice(nuber_of_cards)} {choice(type_of_card)}"
+# print("Random Choice: ", random_card)
+
+# #******************************************************************************************
+
+# # >>>>>>>>>>>>>>> Tenth and Eleventh task to do. <<<<<<<<<<<<<<<<
+# # Draws a random country name and asking for its capitol, If answer is correct print Good Answer
+# from random import choice
+#
+# countries_name = ['Poland', 'Ghana', 'Togo']
+#
+#
+# choice = choice(countries_name)
+#
+# print(f"Draws Country: {choice}")
+# trials = 0
+# points = 3
+# while points >= 0:
+#     user_answer = input(f'Enter a capitol name for {choice}: ').lower()
+#     trials += 1
+#     if choice == 'Poland':
+#         if user_answer == 'warsaw':
+#             print(f"Good Answer! Trials: {trials}")
+#             break
+#         else:
+#             print("Bad Answer... Try Again.")
+#             points -= 1
+#             continue
+#     elif choice == 'Ghana':
+#         if user_answer == 'akra':
+#             print(f"Good Answer! Trials: {trials}")
+#             break
+#         else:
+#             print("Bad Answer... Try Again.")
+#             points -= 1
+#             continue
+#     elif choice == 'Togo':
+#         if user_answer == 'lome':
+#             print(f"Good Answer! Trials: {trials}")
+#             break
+#         else:
+#             print("Bad Answer... Try Again.")
+#             points -= 1
+#             continue
+#     else:
+#         print('Error')
+#         break
+#
+# if points == 3:
+#     print('You are awesome ')
+# elif points == 2:
+#     print('Just one mistake')
+# elif points == 1:
+#     print('One point not bad')
+# else:
+#     print('You be better next time')
+# #**********************************************************************
+
+
+
+
+
 
 
