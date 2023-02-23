@@ -230,6 +230,63 @@
 # print(f'To Pay: {bill:.2f}zł')
 
 # # >>>>>>>>>>>>>>> Ninth task to do. <<<<<<<<<<<<<<<<
+# # Encryption password
+#
+# encrypt = 3
+#
+# password = 'python is eazy'
+# print(password)
+# encrypted_password = []
+# for word in password:
+#     code_word = ord(word) + encrypt
+#     encrypted_password.append(str(code_word))
+#
+# print(encrypted_password)
+# real_password = ''
+# for number in encrypted_password:
+#     encode_word = chr(int(number) - encrypt)
+#     real_password += (str(encode_word))
+#
+# print(real_password)
 
+# # >>>>>>>>>>>>>>> Tenth task to do. <<<<<<<<<<<<<<<<
+# # Remove all words starts with putted letter
+#
+# text = 'Python is the best program to learn. Python is eazy to use in automatic plays'
+# print(text)
+# text = text.lower().split()
+#
+# new_text = ''
+# for word in text:
+#     if not word.startswith('p'):
+#         new_text += f"{word} "
+#
+# print(new_text)
 
+# # >>>>>>>>>>>>>>> Eleventh task to do. <<<<<<<<<<<<<<<<
+# # Check which word in two text are the same
 
+# text1 = set('first name')
+# text2 = set('last name')
+# test = text1 & text2
+# print(test)
+
+# # >>>>>>>>>>>>>>> Twelfth task to do. <<<<<<<<<<<<<<<<
+# # print word beloved word from text with coma.
+
+# text = 'For ,learning ,python ,you ,need ,quiet ,and ,peace'
+# print(text)
+# text = text.replace(',', '\n')
+# print(text)
+
+# # >>>>>>>>>>>>>>> Thirteenth task to do. <<<<<<<<<<<<<<<<
+# # check if string1 is equal to mixed string1
+#
+# word1 = 'basketball'
+# word2 = 'lasbklbtae'
+#
+# word1 = sorted(word1)
+# word2 = sorted(word2)
+#
+# if word1 == word2:
+#     print('Equal !!')
