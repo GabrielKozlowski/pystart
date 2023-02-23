@@ -166,18 +166,18 @@ import random
 # #===================================================================
 
 # pessel = '51062488907'
-# mnożnik = '13791379131'
+# control = '13791379131'
 #
 # pessel.replace('', ' ')
 # mnożnik.replace('', ' ')
 # numbers_sum = 0
 # if len(pessel) == 11:
-#     for number, power in zip(pessel, mnożnik):
+#     for number, power in zip(pessel, control):
 #         value = int(number) * int(power)
 #         numbers_sum += value
 # print(numbers_sum)
 # if str(numbers_sum).endswith('0'):
 #     print(f"This pessel {pessel}: is correct")
 # else:
-#     print('Password is not correct !!')
+#     print('Pessel is not correct !!')
 # #===================================================================
