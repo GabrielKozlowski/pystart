@@ -138,12 +138,96 @@
 
 
 # # >>>>>>>>>>>>>>> Fifth task to do. <<<<<<<<<<<<<<<<
+# # Create dictionary with temperature in Cities.
+#
+# cities = {}
+# print('If You Enter "break" TO City Name, The Program Ends')
+# while True:
+#     name_of_city = input("\nEnter City Name: ")
+#     if name_of_city == 'break':
+#         break
+#     temp_of_city = input("Enter Temperature In This City: ")
+#     city = {name_of_city: temp_of_city}
+#     cities.update(city)
+#
+# average_temp = []
+#
+# for name, temp in cities.items():
+#     average_temp.append(int(temp))
+#
+# average_temp_value = sum(average_temp) / len(cities)
+# sort_temp = sorted(average_temp)
+# print(f'Average Temp: {average_temp_value:.1f}\nMax Temp: {sort_temp[-1]}\nMin Temp: {sort_temp[0]} ')
 
 # # >>>>>>>>>>>>>>> Sixth task to do. <<<<<<<<<<<<<<<<
+# # Create dictionary with Names
+
+# names = []
+# print('If You Enter "break" To Name, The Program Ends')
+#
+# while True:
+#     name_to_add = input('Enter Name To Add: ').capitalize()
+#     if name_to_add == 'Break':
+#         break
+#
+#     names.append(name_to_add)
+# dict_of_names = {}
+# for name in names:
+#     value = names.count(name)
+#     person = {name: value}
+#     dict_of_names.update(person)
+#
+# print(f"Dictionary Of Names: {dict_of_names}")
+# dict_of_names = set(dict_of_names)
+# dict_of_names = list(dict_of_names)
+# print(f"List Of Unique Names  {sorted(dict_of_names)}")
 
 # # >>>>>>>>>>>>>>> Seventh task to do. <<<<<<<<<<<<<<<
+# # Check Even, Odd Numbers and add to list
+
+# odd_numbers = []
+# even_numbers = []
+#
+# while (number := int(input('Enter number, 0 ends program. : '))) != 0:
+#     (even_numbers.append(number) if number % 2 == 0 else odd_numbers.append(number))
+#
+# print(f"List Of Odd Numbers: {odd_numbers}\nList Of Even Numbers: {even_numbers}")
 
 # # >>>>>>>>>>>>>>> Eighth task to do. <<<<<<<<<<<<<<<<
+# # Add product to basket from dictionary of products. Check amount and calculate value of bill
+#
+# products = {
+#     'bread': 2.5,
+#     'apples': 1.8,
+#     'cheese': 4.2,
+#     'juice': 3.8,
+#     'butter': 6.2,
+# }
+#
+# basket = {}
+# while True:
+#     for product, price in products.items():
+#         print(f"{product.capitalize()} - {price}zł")
+#     print('\nEnter "summarize" to end the program')
+#     choice_product = input('What Product You Want Add To Your Basket?? : ').lower()
+#     if choice_product == 'summarize':
+#         break
+#     choice_value = int(input('How Many ?? : '))
+#
+#     if choice_product not in products.keys():
+#         print('This Product Does Not Exist')
+#
+#     stuff = {choice_product: {choice_value: (choice_value * products[choice_product])}}
+#     basket.update(stuff)
+#
+# print('---' * 20)
+# bill = 0
+# for product, staff in basket.items():
+#     for amount, price in staff.items():
+#         print(f"You Bought {amount} x {product}")
+#         bill += price
+#
+# print(f'To Pay: {bill:.2f}zł')
 
 # # >>>>>>>>>>>>>>> Ninth task to do. <<<<<<<<<<<<<<<<
 
