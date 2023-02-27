@@ -17,9 +17,9 @@
 #     print(capital)
 # #**********************************************************
 import random
-
-s = 'ula'
-s = 'ala'
+#
+# s = 'ula'
+# s = 'ala'
 
 # message = '''
 # Welcome
