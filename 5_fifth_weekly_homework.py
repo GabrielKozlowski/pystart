@@ -311,10 +311,111 @@
 # print('Number to sort:', number_to_func)
 # print('Sorted number:', sorted_number(number_to_func))
 
-# # >>>>>>>>>>>>>>> Eleven task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# # >>>>>>>>>>>>>>> Eleventh task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# # Create Function. Get Numbers List, Check If Number Is Positive Or Negative, Change Value And Return
 
+#
+# def changing_numbers_value(list1: list) -> list:
+#     """
+#     This Function Convert Numbers Value In List To The Opposite
+#     :param list1: list With Numbers
+#     :return: Numbers List With Opposite Value
+#     """
+#     # Create New List For Converted Numbers
+#     changed_list = []
+#     # Loop for Each Number In List
+#     for number in list1:
+#         # Check If Number Is Positive Or Negative And Change It, And Append To New List
+#         changed_list.append(abs(number)) if number < 0 else changed_list.append(-abs(number))
+#
+#     return changed_list
+#
+#
+# # Create List With Numbers For Function
+# numbers_list_to_func = [2, -5, 6, -8, 9, -34, 61]
+# print(changing_numbers_value(numbers_list_to_func))
 
+# # >>>>>>>>>>>>>>> Twelfth task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# # Create Function. Get List With String Value And Convert It To Integer.
+# # Create Function. Get List With Integer Value And Convert It To String.
+#
+# def change_list_elements_to_string(list1: list) -> list:
+#     """
+#     This Function Get List And Change Value To String
+#     :param list1: List With Integer Value For Convert To String
+#     :return: List With String Value
+#     """
+#     # Create New List For String Item
+#     new_list = []
+#     # Loop For Getting Number From List
+#     for item in list1:
+#         # Append String Item To New List
+#         new_list.append(str(item))
+#
+#     return new_list
+#
+#
+# def change_list_elements_to_integer(list1: list) -> list:
+#     """
+#     This Function Get List And Change Value To Integer
+#     :param list1: List With String Value For Convert To Integer
+#     :return: List With Integer Value
+#     """
+#     # Create New List For Integer Item
+#     new_list = []
+#     # Loop For String Item From List
+#     for item in list1:
+#         # Append Converted String Item To Integer
+#         new_list.append(int(item))
+#
+#     return new_list
+#
+#
+# # Create List With Numbers
+# number_list_for_func = [1, 2, 3, 4, 5, 6, 7]
+# print(change_list_elements_to_string(number_list_for_func))
+# # Create List With String Items
+# string_list_for_func = ['1', '2', '3', '4', '5', '6', '7', '8']
+# print(change_list_elements_to_integer(string_list_for_func))
 
+# # >>>>>>>>>>>>>>> Thirteen task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# # Create Function. Get Number To Sum It. Add All Earlier Numbers To Number. Sum It And Return
+#
+#
+# def sum_to(number: int) -> int:
+#     """
+#     This Function Adding First Number To Next One. Ends When Added Last Number.
+#     :param number: It's Last Number For Adding.
+#     :return: Sum Of All Added Numbers.
+#     """
+#     # Check If Number Is Equal To 0. This Is For Ending Recursion
+#     if number == 0:
+#         return 0
+#     # Return And Doing Recursion
+#     return number + sum_to(number - 1)
+#
+#
+# # Create Variable With Number To Function
+# number_to_sum = 9
+# print(sum_to(number_to_sum))
 
-
-
+# # >>>>>>>>>>>>>>> Fourth task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# # Create Function. Get Pin And Check It If Len Of Pin It's Four
+#
+# def check_pin(pin: int) -> bool:
+#     """
+#     This Function Check If Pin Has Four Numbers
+#     :param pin: Four Numbers To Check
+#     :return: True Or False
+#     """
+#     # Check If String Len Of Pin Is Not Equal To Four
+#     if len(str(pin)) != 4:
+#         return False
+#
+#     return True
+#
+#
+# # Create Variable OF Number To Func
+# pin_to_check = 8272
+# print(check_pin(pin_to_check))
+###################################################################################
