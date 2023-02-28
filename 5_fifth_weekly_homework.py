@@ -29,7 +29,7 @@
 #
 
 
-# # >>>>>>>>>>>>>>> Second task to do. <<<<<<<<<<<<<<<<
+# # >>>>>>>>>>>>>>> Second task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # # Create Function. Get list of numbers and return list with only even numbers
 #
 # def get_even_numbers(number_list: list) -> list:
@@ -54,7 +54,7 @@
 # print(get_even_numbers(list1))
 
 
-# # >>>>>>>>>>>>>>> Third task to do. <<<<<<<<<<<<<<<<
+# # >>>>>>>>>>>>>>> Third task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # # Create Function. Get string and return only strings with length 4-8
 #
 # def check_string(text: str) -> str:
@@ -82,7 +82,7 @@
 # print(check_string(text1))
 
 
-# # >>>>>>>>>>>>>>> Fourth task to do. <<<<<<<<<<<<<<<<
+# # >>>>>>>>>>>>>>> Fourth task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # # Create Function. Check string and count letters in brackets
 #
 # def count_letter(text: str, start: str = '(', end: str = ')') -> int:
@@ -97,7 +97,7 @@
 #     number_of_letters = 0
 #     # Split Words In Text
 #     split_text = text.split(' ')
-#     # For Loop For Word In Spli Text
+#     # For Loop For Word In Split Text
 #     for word in split_text:
 #         # Check If Word Starts And Ends With Bracket
 #         if word.startswith(start) and word.endswith(end):
@@ -116,22 +116,205 @@
 # print(count_letter(text3))
 #
 
-# # >>>>>>>>>>>>>>> Fifth task to do. <<<<<<<<<<<<<<<<
+# # >>>>>>>>>>>>>>> Fifth task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# # Create Function. Get From User Value In Percent And Print Mark
+#
+# def count_mark(percent: int) -> str:
+#     """
+#     This Function Checks How Many Percent It Is And Return String
+#     :param percent: Int Of Percent
+#     :return: Information Of THe Mark
+#     """
+#     # Check Percent Value And Return Message
+#     if percent < 45:
+#         return "Your mark is: 1"
+#     elif 45 <= percent < 55:
+#         return "Your mark is: 2"
+#     elif 55 <= percent < 80:
+#         return "Your mark is: 3"
+#     elif 80 <= percent < 90:
+#         return "Your mark is: 4"
+#     elif 90 <= percent < 95:
+#         return "Your mark is: 5"
+#     else:
+#         return "Your mark is: 6"
+#
+#
+# # Create Value For Function
+# percent_of_exam = 65
+# print(count_mark(percent_of_exam))
+
+# # >>>>>>>>>>>>>>> Sixth task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# # Create Function. Get Two Tuples With Value Of X And Y And Return Calculated Value
+# from math import sqrt
+#
+#
+# def count_section(point1: tuple = (0, 0), point2: tuple = (0, 0)) -> float:
+#     """
+#     This Function Get Two Tuples And Calculate The Length Of The Section
+#     :param point1: Tuple With Two Value x1 , y1
+#     :param point2: Tuple With Two Value x2 , y2
+#     :return: Result Of Calculated Value, Float
+#     """
+#     # Create A Variable And Doing Math Calculate
+#     section = sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
+#     return section
+#
+#
+# # Create Tuples With Value
+# first_point = (-7, -2)
+# second_point = (4, 4)
+# print(count_section(first_point, second_point))
+
+# # >>>>>>>>>>>>>>> Seventh task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# # Create Function. Calculate Kilometer To Miles
+#
+# def kilometers_to_miles(value: int = 1) -> float:
+#     """
+#     This Function Calculate Kilometers Value To Miles Value
+#     :param value: Value Of Kilometers To Calculate
+#     :return: Miles In Float
+#     """
+#     # Create Variable And Calculate Value
+#     miles = value * 0.621371192
+#     return miles
+#
+#
+# def miles_to_kilometers(value: int = 1) -> float:
+#     """
+#     This Function Calculate Miles Value To Kilometers Value
+#     :param value: Value Of Miles To Calculate
+#     :return: Kilometers In Float
+#     """
+#     # Create Variable And Calculate Value
+#     kilometers = value / 0.621371192
+#     return kilometers
+#
+#
+# value_to_calculate = 123
+# km_to_ml = kilometers_to_miles(value_to_calculate)
+# ml_to_km = miles_to_kilometers(value_to_calculate)
+# print(f"Kilometers: {value_to_calculate} = {km_to_ml:.2f} Miles")
+# print(f"Miles: {value_to_calculate} = {ml_to_km:.2f} Kilometers")
+
+# # >>>>>>>>>>>>>>> Eighth task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# # Create Function. Get List With Value And Return Dict With Total,Mean,Max,Min Value
+#
+#
+# def get_value_from_list(list1: list) -> dict:
+#     """
+#     This Function Get List And Return Dict With Total, Mean, Max, Min Value
+#     :param list1: List With Value To Count
+#     :return: Dict With Value Total, Mean, Max, Min
+#     """
+#
+#     total = len(list1)
+#     mean = sum(list1) / total
+#     sorted_list = sorted(list1)
+#     max_value = sorted_list[-1]
+#     min_value = sorted_list[0]
+#     dict_to_return = {
+#         "total": total,
+#         "mean": mean,
+#         "max value": max_value,
+#         "min value": min_value
+#     }
+#
+#     return dict_to_return
+#
+#
+# list_for_function = [2, 3, 6, 8, 9, 43, 23, 65, 777, 22]
+# print(get_value_from_list(list_for_function))
+
+# # >>>>>>>>>>>>>>> Ninth task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# # Create Function. Get String And Revers It
+#
+#
+# def revers_string(text: str) -> str:
+#     """
+#     This Function Get String And Revers It
+#     :param text: String To Revers
+#     :return: Reversed String
+#     """
+#     # Create List For Letters
+#     reversed_string_list = []
+#     # Loop For Adding Last Letter To New List
+#     for i in range(1, len(text) + 1):
+#         reversed_string_list.append(text[-i])
+#     # Join Letters And Return String
+#     return ''.join(reversed_string_list)
+#
+#
+# # Create String For Function
+# text_to_func = 'coding in Python'
+# print(revers_string(text_to_func))
+# # # ============================================================================
+# # Create Function. Get String And Revers Letters In Words
+#
+#
+# def revers_string(text: str, separator=' ') -> str:
+#     """
+#     This Function Get String And Revers Letters In Words
+#     :param text: String To Revers
+#     :param separator: What Separator Is In String
+#     :return: Reversed String
+#     """
+#     # Split Words Using Separator From User
+#     split_text = text.split(sep=separator)
+#     # Create List For Text
+#     reversed_string_list = []
+#     # Loop For Word In Text
+#     for word in split_text:
+#         # Create List For Reversed Word
+#         word_list = []
+#         # Loop For Adding Last Letter To New Word List
+#         for i in range(1, len(word) + 1):
+#             word_list.append(word[-i])
+#         # Adding New Word To List For Text, With Join Func
+#         reversed_string_list.append(''.join(word_list))
+#     # Join Words And Return String
+#     return ' '.join(reversed_string_list)
+#
+#
+# # Create String For Function
+# text_to_func = 'coding in Python'
+# text_to_func2 = 'coding-in-Python'
+#
+# print(revers_string(text_to_func))
+# # Adding Separator
+# print(revers_string(text_to_func2, separator='-'))
 
 
-# # >>>>>>>>>>>>>>> Sixth task to do. <<<<<<<<<<<<<<<<
+# # >>>>>>>>>>>>>>> Tenth task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# Create Function. Get Numer Sort It And Return From The Smallest To The Largest
+#
+# def sorted_number(numb: int = 1) -> int:
+#     """
+#     This Function Revers Number And Return It From The Smallest To The Largest
+#     :param numb: Number To Revers, More Than 9
+#     :return: Reversed Number From The Smallest To The Largest
+#     """
+#     # Create List For Numbers
+#     list_of_number = []
+#     # Convert Int To Str And loop It
+#     for number in str(numb):
+#         # Append Str Number To List
+#         list_of_number.append(number)
+#     # Sorted List
+#     list_of_number = sorted(list_of_number)
+#     # Join String, Convert To Integer And Return.
+#     return int(''.join(list_of_number))
+#
+#
+# # Create variable With Number To Func
+# number_to_func = 372418695
+# print('Number to sort:', number_to_func)
+# print('Sorted number:', sorted_number(number_to_func))
+
+# # >>>>>>>>>>>>>>> Eleven task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
-# # >>>>>>>>>>>>>>> Seventh task to do. <<<<<<<<<<<<<<<
 
-
-# # >>>>>>>>>>>>>>> Eighth task to do. <<<<<<<<<<<<<<<<
-
-
-# # >>>>>>>>>>>>>>> Ninth task to do. <<<<<<<<<<<<<<<<
-
-
-# # >>>>>>>>>>>>>>> Tenth task to do. <<<<<<<<<<<<<<<<
 
 
 
