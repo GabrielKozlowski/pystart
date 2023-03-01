@@ -179,7 +179,7 @@
 #     miles = value * 0.621371192
 #     return miles
 #
-#
+# #
 # def miles_to_kilometers(value: int = 1) -> float:
 #     """
 #     This Function Calculate Miles Value To Kilometers Value
@@ -189,9 +189,9 @@
 #     # Create Variable And Calculate Value
 #     kilometers = value / 0.621371192
 #     return kilometers
-#
-#
-# value_to_calculate = 123
+
+
+# value_to_calculate = 10
 # km_to_ml = kilometers_to_miles(value_to_calculate)
 # ml_to_km = miles_to_kilometers(value_to_calculate)
 # print(f"Kilometers: {value_to_calculate} = {km_to_ml:.2f} Miles")
@@ -210,14 +210,11 @@
 #
 #     total = len(list1)
 #     mean = sum(list1) / total
-#     sorted_list = sorted(list1)
-#     max_value = sorted_list[-1]
-#     min_value = sorted_list[0]
 #     dict_to_return = {
 #         "total": total,
 #         "mean": mean,
-#         "max value": max_value,
-#         "min value": min_value
+#         "max value": max(list1),
+#         "min value": min(list1)
 #     }
 #
 #     return dict_to_return
@@ -419,3 +416,4 @@
 # pin_to_check = 8272
 # print(check_pin(pin_to_check))
 ###################################################################################
+
