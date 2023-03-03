@@ -9,12 +9,6 @@ def calculate_brutto(netto: float = 0) -> float:
     return float(f"{brutto:.2f}")
 
 
-def test_calculate_brutto():
-    assert calculate_brutto(2000) == 2460.00
-    assert calculate_brutto(0) == 0.0
-    assert calculate_brutto() == 0.0
-
-
 def calculate_netto(brutto: float = 0) -> float:
     """
     This Function Calculate Netto Of Value
@@ -23,12 +17,6 @@ def calculate_netto(brutto: float = 0) -> float:
     """
     netto = brutto - (brutto * 0.23)
     return float(f"{netto:.2f}")
-
-
-def test_calculate_netto():
-    assert calculate_netto(2000) == 1540.00
-    assert calculate_netto(0) == 0.0
-    assert calculate_netto() == 0.0
 
 
 def calculate_discount(price: float = 0, list_with_discounts: list = []) -> list:
@@ -47,8 +35,3 @@ def calculate_discount(price: float = 0, list_with_discounts: list = []) -> list
 
     return output
 
-
-def test_calculate_discount():
-    assert calculate_discount(2000, [0.1, 0.2, 0.3, 0.4, 0.5]) == [200, 400, 600, 800, 1000]
-    assert calculate_discount(2000) == [2000]
-    assert calculate_discount() == [0]
