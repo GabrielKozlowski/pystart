@@ -1,6 +1,6 @@
 
 # # >>>>>>>>>>>>>>> First task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-def group_them(wall: str='red', tomato: str='red', light: str='yellow', lemon: str='yellow', grass: str='green')-> str:
+def group_them(wall: str='red', tomato: str='red', light: str='yellow', lemon: str='yellow', grass: str='green') -> str:
     """
     This Function Get Colors In String And Return Result
     :param wall: Color For Wall
@@ -13,7 +13,7 @@ def group_them(wall: str='red', tomato: str='red', light: str='yellow', lemon: s
     return f"Wall is {wall} \nTomato is {tomato} \nLight is {light} \nLemon is {lemon} \nGrass is {grass}"
 
 
-def test_grup_them():
+def test_group_them():
     assert group_them() == "Wall is red \nTomato is red \nLight is yellow \nLemon is yellow \nGrass is green"
     assert group_them(wall='black', grass='white') == "Wall is black \nTomato is red \nLight is yellow " \
                                                       "\nLemon is yellow \nGrass is white"
@@ -23,7 +23,7 @@ def test_grup_them():
                                          "\nGrass is green"
 
 # # >>>>>>>>>>>>>>> Second task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
+# # Create Package Finances With Modul 'Budget' and 'Ecommerce' With Defs
 
 
 # # >>>>>>>>>>>>>>> Third task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
