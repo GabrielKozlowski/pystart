@@ -1,37 +1,34 @@
 
-def calculate_brutto(netto: float = 0) -> float:
+def calculate_brutto(netto: float, vat: float = 0.23) -> float:
     """
     This Function Calculate Brutto Of Value
+    :param vat: Vat To Calculate
     :param netto: Value To Calculate
     :return: Result Calculation
     """
-    brutto = netto * 1.23
-    return float(f"{brutto:.2f}")
+    return netto * (1 + vat)
 
 
-def calculate_netto(brutto: float = 0) -> float:
+def calculate_netto(brutto: float, vat: float = 0.23) -> float:
     """
     This Function Calculate Netto Of Value
+    :param vat: Vat To Calculate
     :param brutto: Value To Calculate
     :return: Result Of Calculate
     """
-    netto = brutto - (brutto * 0.23)
-    return float(f"{netto:.2f}")
+    return brutto / (1 + vat)
 
 
-def calculate_discount(price: float = 0, list_with_discounts: list = []) -> list:
+def calculate_discount(total: float, list_with_discounts: list) -> float:
     """
     This Function Count Discount Value Of Price
-    :param price: Price To Count Discounts
+    :param total: Price To Count Discounts
     :param list_with_discounts: List Of All Discounts
     :return: List With Calculated Discounts
     """
-    if len(list_with_discounts) == 0:
-        return [price]
 
-    output = []
     for discount in list_with_discounts:
-        output.append(price * discount)
+        total -= total * discount
 
-    return output
+    return total
 

@@ -8,5 +8,5 @@ setup(
     author='Gabriel Kozłowski',
     author_email='gabrys20krk@gmail.com',
     url='https://nowhere.com',
-    packages=find_packages(exclude=['tests'])
+    packages=find_packages(exclude=['*.tests', 'tests'])
 )
