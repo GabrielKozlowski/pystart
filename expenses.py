@@ -9,23 +9,30 @@ Expenses
 """
 while True:
     user_choice = input(text)
+    with open('list_of_expenses.json', 'r') as file:
+        list_of_expenses = load(file)
+
 
     if user_choice == '1':
-        with open('list_of_expenses.json', 'r') as file:
-            list_of_expenses = load(file)
             name_of_expense = input('Enter Name Of Expense: ')
-            value_of_expense = input('Enter Value Of Expense: ')
-            expense = {
+            value_of_expense = float(input('Enter Value Of Expense: '))
+            list_of_expenses.append({
                 "name": name_of_expense,
                 "value": value_of_expense
-            }
-            list_of_expenses.append(expense)
+            })
+
             with open('list_of_expenses.json', 'w') as write_file:
                 dump(list_of_expenses, write_file)
 
     elif user_choice == '2':
-        with open('list_of_expenses.json', 'r') as file:
-            print(load(file))
+        total = 0
+        for expense in list_of_expenses:
+            total += expense['value']
+            print(expense['name'], expense['value'])
+        print('Total costs of expenses', total)
+
+
+
     elif user_choice == '3':
         print('Bye Bye...')
         quit()
