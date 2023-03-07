@@ -55,16 +55,21 @@ from datetime import date, datetime, timedelta
 
 #####################################################################################
 
-with open('transakcje.txt', 'r', encoding='utf-8') as data_file, open('przychody.txt', 'w', encoding='utf-8') as output_file:
-    for line in data_file:
-        date, name, value = line.strip().split(';')
-        if int(value) > 0:
-            output_file.write(line)
+# with open('transakcje.txt', 'r', encoding='utf-8') as data_file, open('przychody.txt', 'w', encoding='utf-8') as output_file:
+#     for line in data_file:
+#         date, name, value = line.strip().split(';')
+#         if int(value) > 0:
+#             output_file.write(line)
+#
+# total = 0
+# with open('przychody.txt', 'r', encoding='utf-8') as file:
+#     for line in file:
+#         date, name, value = line.strip().split(';')
+#         total += int(value)
+#
+# print(total)
 
-total = 0
-with open('przychody.txt', 'r', encoding='utf-8') as file:
-    for line in file:
-        date, name, value = line.strip().split(';')
-        total += int(value)
+###########################################################################################
 
-print(total)
+
+
