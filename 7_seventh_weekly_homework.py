@@ -4,7 +4,7 @@
 #
 # now = datetime.now()
 # print(f"{now.day}/{now.month}/{now.year}, {now.hour}:{now.minute}:{now.second}")
-import requests
+# import requests
 # # >>>>>>>>>>>>>>> Second task to do. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # # Print How Many Days Are Left Until Summer
 #

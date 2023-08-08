@@ -1,0 +1,5 @@
+Car
+Pen
+Orange
+Lamp
+Apple
