@@ -7,3 +7,5 @@ for station in response.json():
     if station['id_stacji'] == '12566':
         for parameter, value in station.items():
             print(f'{parameter.capitalize()}:  {value}')
+            
+
