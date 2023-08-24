@@ -135,10 +135,12 @@ def ping_ips_from_db(db_name:str, trials:int, sleep:int)-> str:
 # # Create Second table in this same db
 # print(create_sqlite_db('test_ip', 'log', id='INTEGER PRIMARY KEY AUTOINCREMENT' , ip_adress='VARCHAR(100) NOT NULL' , date_of_checks_connection='BLOB' ,is_connected='VARCHAR(10) NOT NULL'))
 
-
+# # Delete Table in db
 # print(delete_table_from_sqlite_db("test_ip","log"))
 
-
+# # Add ips to db
 # print(add_ips_to_db('test_ip', '192.168.10.1'))
+
+# # Ping ips from db
 # print(ping_ips_from_db('test_ip', 5, 60))
 
